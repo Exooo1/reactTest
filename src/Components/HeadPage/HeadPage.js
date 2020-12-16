@@ -1,10 +1,10 @@
 import React from 'react';
-
+import '../HeadPage/headPage.css'
 
 const HeadPage = () => {
     return (
-        <div>
-            <h1>HeadPage</h1>
+        <div className="headPage">
+
         </div>
     )
 }
