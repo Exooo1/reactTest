@@ -1,4 +1,4 @@
-.logo {
+/* .logo {
     position: absolute;
     padding-top: 70px;
     padding-left: 70px;
@@ -60,8 +60,74 @@
 
 .choose img {
     border-bottom: solid;
-    border-color: #4CAF50;
+    border-color: #1f221f;
     margin-top: 190px;
     width: 250px;
     height: 250px;
+} */
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    height: 160px;
+}
+
+.logo {
+    position: absolute;
+    margin-left: 100px;
+    padding-top: 20px;
+    padding-top: 70px;
+}
+
+.logo a {
+    font-family: serif;
+    letter-spacing: 4px;
+    font-size: 45px;
+    color: rgb(49, 119, 49);
+    text-decoration: none;
+}
+
+.logoImage {
+    position: absolute;
+    margin-left: 70px;
+}
+
+.logoImage img {
+    width: 250px;
+    height: 250px;
+}
+
+.link {
+    margin: 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 55px;
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.link a:hover {
+    color: rgb(251, 255, 0);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.choose {
+    text-align: center;
+}
+
+.choose img {
+    border-bottom: solid;
+    border-color: #1f221f;
+    margin-top: 150px;
+    width: 150px;
+    height: 150px;
 }

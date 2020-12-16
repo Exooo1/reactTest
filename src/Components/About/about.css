@@ -1,0 +1,44 @@
+.wrapperAb {
+    margin: 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe {
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.5);
+    width: 700px;
+    height: 500px;
+    background-color: #eaeaea;
+    border-radius: 80px;
+}
+
+.back {
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    height: 100px;
+    background-color: #0e6b46;
+    ;
+}
+
+.back img {
+    margin-top: 40px;
+    border-radius: 70px;
+    width: 120px;
+    height: 120px;
+}
+
+.backAb {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.backAb h1 {}
+
+.backAb p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.backAb h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
