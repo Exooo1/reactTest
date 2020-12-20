@@ -32,8 +32,11 @@ const Panel = (props) => {
                 </header>
                 <LogoTea />
                 <Route exact path='/about' render={() => <About />} />
-                <Route exact path='/products' render={() => <ProductsSite products={props.state.productItem} />} />
-                <Route exact path='/contacts' render={() => <ShowContacts contacts={props.state.linkContacts} />} />
+                <Route exact path='/products' render={() => <ProductsSite
+                    productsOne={props.state.products.oneTierpPoductItem}
+                    productsTwo={props.state.products.twoTierproductItem}
+                    productsThree={props.state.products.threeTierproductItem} />} />
+                <Route exact path='/contacts' render={() => <ShowContacts linkCont={props.state.showCont} />} />
                 <Route exact path='/' render={() => <HeadPage />} />
                 <DownPanel />
             </BrowserRouter>

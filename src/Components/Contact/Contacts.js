@@ -3,7 +3,7 @@ import '../Contact/contacts.css'
 
 const ShowContacts = (props) => {
 
-    let itemContacts = props.contacts.map((getCont) => <ShowLinkContacts src={getCont.src} href={getCont.href} />)
+    let itemContacts = props.linkCont.map(get => <ShowLinkContacts href={get.href} src={get.src} />);
 
     return (
         <div className='headCont'>

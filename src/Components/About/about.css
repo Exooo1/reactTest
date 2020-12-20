@@ -14,11 +14,12 @@
 }
 
 .back {
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
     box-shadow: 0 0 13px rgba(0, 0, 0, 0.5);
     text-align: center;
     height: 100px;
     background-color: #0e6b46;
-    ;
 }
 
 .back img {
