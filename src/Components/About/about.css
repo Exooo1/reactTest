@@ -6,6 +6,7 @@
 }
 
 .aboutMe {
+    margin-top: 30px;
     box-shadow: 0 0 13px rgba(0, 0, 0, 0.5);
     width: 700px;
     height: 500px;
@@ -13,7 +14,7 @@
     border-radius: 80px;
 }
 
-.back {
+.backImg {
     border-top-left-radius: 70px;
     border-top-right-radius: 70px;
     box-shadow: 0 0 13px rgba(0, 0, 0, 0.5);
@@ -22,24 +23,45 @@
     background-color: #0e6b46;
 }
 
-.back img {
+.backImg img {
     margin-top: 40px;
     border-radius: 70px;
     width: 120px;
     height: 120px;
 }
 
-.backAb {
+.backMe {
     margin-top: 80px;
     text-align: center;
 }
 
-.backAb h1 {}
-
-.backAb p {
+.backMe p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.backAb h1 {
+.backMe h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.twoSec {
+    opacity: 0;
+}
+
+.fiveSec {
+    opacity: 0;
+}
+
+.wrapperAb:hover .twoSec {
+    opacity: 1;
+    transition: 3s;
+}
+
+.wrapperAb:hover .fiveSec {
+    opacity: 1;
+    transition: 10s;
+}
+.wrapperAbout{
+    max-width: 100%;
+    height: 46em;
+    background-color: wheat;
 }

@@ -4,6 +4,14 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.prods {
+    perspective: 1000;
+}
+
+.prods:hover .wrapProd, .prods.hover .wrapProd {
+    transform: rotateY(180deg);
+}
+
 .wrap {
     display: flex;
     justify-content: center;
@@ -11,11 +19,22 @@
 }
 
 .wrapProd {
+    transition: 0.6s;
+    transform-style: preserve-3d;
     width: 220px;
-    height: 280px;
+    height: 290px;
     text-align: center;
     margin: 25px 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.front, .but {
+    backface-visibility: hidden;
+}
+
+.front {
+    position: absolute;
+    z-index: 2;
 }
 
 .prods:hover {
@@ -23,10 +42,16 @@
     transform: scale(1.2);
 }
 
+.front p {
+    margin-top: 0px;
+}
+
 .but {
+    transform: rotateY(180deg);
     margin: 30px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .but button {
@@ -37,10 +62,6 @@
     height: 35px;
 }
 
-#one {
-    margin-right: 90px;
-}
-
 .wrapProd h1 {
     padding-top: 10px;
     font-size: 25px;
@@ -49,4 +70,58 @@
 .wrapProd img {
     width: 120px;
     height: 120px;
+}
+
+.countProd {
+    padding-right: 900px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 50px;
+}
+
+.countProd img {
+    padding-right: 60px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+
+.countProd h1 {
+    padding-top: 11px;
+    font-size: 24px;
+    position: absolute;
+    padding-left: 140px;
+}
+
+.count b {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.back {
+    margin-bottom: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.but .twoBut {
+    margin-top: 230px;
+}
+
+.but .back {
+    position: absolute;
+}
+
+#one {
+    margin-right: 100px;
+}
+
+.count {
+    margin-top: 150px;
+    position: absolute;
+}
+
+.backImage {
+    position: absolute;
 }

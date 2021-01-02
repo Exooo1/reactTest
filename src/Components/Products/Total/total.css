@@ -1,0 +1,21 @@
+.headTotal {
+    width: 1030px;
+    height: 130px;
+    border-radius: 90px;
+    margin: 0 23%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.headTotal h1 {
+    padding-left: 300px;
+}
+
+.total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

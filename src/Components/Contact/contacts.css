@@ -1,42 +1,27 @@
-.headCont {
-    margin-top: 60px;
+.wrapperCont {
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.mapCont {
-    margin-top: 10px;
-    margin-left: 400px;
-}
-
-.mapCont iframe {
-    width: 400px;
-    height: 250px;
-}
-
-.contacts {
-    margin-bottom: 50px;
-    margin-right: 300px;
-    position: absolute;
+.linkCont img {
+    margin: 0 8px;
+    width: 35px;
+    height: 35px;
 }
 
 .linkCont {
-    padding-left: 50px;
     text-align: center;
 }
 
-.linkCont img {
-    margin: 0 3px;
-    text-align: center;
-    width: 30px;
-    height: 30px;
+.map {
+    margin-left: 30px;
+    width: 300px;
+    height: 200px;
 }
 
-.contacts h1 {
-    text-align: center;
-}
-
-.linkCont a {
-    text-align: center;
+.contacts {
+    padding-top: 10px;
+    margin-top: 30px;
 }
