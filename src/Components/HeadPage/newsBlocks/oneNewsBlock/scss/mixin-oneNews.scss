@@ -1,0 +1,9 @@
+@mixin wi_he($widt, $height) {
+    width: $widt;
+    height: $height;
+}
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

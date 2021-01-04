@@ -2,16 +2,14 @@ import React from 'react';
 import "../Products/products.css"
 import { useState } from 'react';
 import Total from './Total/Total'
-import Cup from '../../Image/cup.png'
-import { su } from '../State/State'
+import Cup from '../../Image/product/cup.png'
 
 
 const ProductsSite = (props) => {
+    debugger
 
     let addProducts = () => {
-        let text = "Hello govno";
-        let ids = 6;
-        props.dispatch(su(text, ids))
+        props.dispatch({ type: "ADD-PRODUCTS" })
     }
 
     let getOneTier = props.productsOne.map(get => <ProductItem name={get.name} src={get.src} id={get.gramPrice} text={get.text} />);
@@ -22,7 +20,7 @@ const ProductsSite = (props) => {
 
     return (
         <div className='headWrap'>
-            <div className="countProd"><img src={Cup}></img><h1>{props.dispatch({ type: "GET-ARRAY" })} :products</h1></div>
+            <div className="countProd"><img src={Cup}></img><h1> :products</h1></div>
             <div className="wrap">
                 <div className="wrappers">
                     {getOneTier}

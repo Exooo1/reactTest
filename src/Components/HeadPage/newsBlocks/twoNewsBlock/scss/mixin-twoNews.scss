@@ -1,0 +1,17 @@
+@mixin wi_he($widt, $height, $back: white) {
+    width: $widt;
+    height: $height;
+    background-color: $back;
+}
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin text($align, $spacing, $size, $width, $color) {
+    text-align: $align;
+    letter-spacing: $spacing;
+    font-size: $size;
+    width: $width;
+    color:$color
+}

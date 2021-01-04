@@ -1,16 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 import './css/index.css'
-import store, { subscribe } from './Components/State/State'
+import store from './Components/redux/redux'
+// import store, { subscribe } from './Components/State/State'
 import Panel from './Components/Panel/Panel'
 
 let startRender = (state) => {
     ReactDOM.render(
-        <Panel state={store.getState()} dispatch={store.dispatch.bind(store)} />,
+        <Panel state={state} dispatch={store.dispatch.bind(store)} />,
         document.getElementById('root')
     );
 }
 
-startRender(store.getState);
+startRender(store.getState());
 
-subscribe(startRender);
+store.subscribe(() => {
+    let state = store.getState();
+    startRender(state)
+});

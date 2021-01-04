@@ -1,3 +1,5 @@
+@import "./mixin-contacts.scss";
+
 .wrapperCont {
     margin-top: 25px;
     display: flex;
@@ -5,20 +7,17 @@
     align-items: center;
 }
 
-.linkCont img {
-    margin: 0 8px;
-    width: 35px;
-    height: 35px;
-}
-
 .linkCont {
     text-align: center;
+    img {
+        margin: 0 8px;
+        @include wi_he(35px, 35px);
+    }
 }
 
 .map {
     margin-left: 30px;
-    width: 300px;
-    height: 200px;
+    @include wi_he(300px, 200px);
 }
 
 .contacts {
