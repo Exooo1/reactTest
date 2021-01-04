@@ -21,7 +21,7 @@ let initial = {
     ],
 }
 
-const reducer_Product = (state = initial, action) => {
+const reducerProduct = (state = initial, action) => {
 
     switch (action.type) {
         case ADD_PRODUCT:
@@ -37,4 +37,4 @@ const reducer_Product = (state = initial, action) => {
     }
 }
 
-export default reducer_Product;
+export default reducerProduct;

@@ -11,36 +11,34 @@ import About from '../About/About'
 
 const Panel = (props) => {
 
-
+    debugger
     return (
-        <div >
-            <BrowserRouter >
-                <header className='header'>
-                    <div >
-                        <div className="logoImage">
-                            <NavLink to="/" className='logo'>TeaShop</NavLink>
-                            <NavLink className="goodJ" to="/" ><img src={Logo}></img></NavLink>
-                        </div>
+        <BrowserRouter >
+            <header className='header'>
+                <div >
+                    <div className="logoImage">
+                        <NavLink to="/" className='logo'>TeaShop</NavLink>
+                        <NavLink className="goodJ" to="/" ><img src={Logo}></img></NavLink>
                     </div>
-                    <nav>
-                        <div className='link'>
-                            <NavLink to='products'>Products</NavLink>
-                            <NavLink to='contacts'>Contacts</NavLink>
-                            <NavLink to='about'>About</NavLink>
-                        </div>
-                    </nav>
-                </header>
-                <LogoTea />
-                <Route exact path='/about' render={() => <About />} />
-                <Route exact path='/products' render={() => <ProductsSite
-                    dispatch={props.dispatch}
-                    productsOne={props.state.products.oneTierpPoductItem}
-                    productsTwo={props.state.products.twoTierproductItem}
-                    productsThree={props.state.products.threeTierproductItem} />} />
-                <Route exact path='/contacts' render={() => <ShowContacts linkCont={props.state.showCont} />} />
-                <Route exact path='/' render={() => <HeadPage dispatch={props.dispatch} state={props.state} />} />
-            </BrowserRouter>
-        </div>
+                </div>
+                <nav>
+                    <div className='link'>
+                        <NavLink to='products'>Products</NavLink>
+                        <NavLink to='contacts'>Contacts</NavLink>
+                        <NavLink to='about'>About</NavLink>
+                    </div>
+                </nav>
+            </header>
+            <LogoTea />
+            <Route exact path='/about' render={() => <About />} />
+            <Route exact path='/products' render={() => <ProductsSite
+                dispatch={props.dispatch}
+                productsOne={props.state.products.oneTierpPoductItem}
+                productsTwo={props.state.products.twoTierproductItem}
+                productsThree={props.state.products.threeTierproductItem} />} />
+            <Route exact path='/contacts' render={() => <ShowContacts linkCont={props.state.cont.showCont} />} />
+            <Route exact path='/' render={() => <HeadPage dispatch={props.dispatch} state={props.state} />} />
+        </BrowserRouter>
     )
 }
 

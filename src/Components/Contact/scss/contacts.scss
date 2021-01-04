@@ -1,10 +1,11 @@
 @import "./mixin-contacts.scss";
-
+.containerCont {
+    height: 560px;
+    background: rgb(54, 91, 96);
+    background: linear-gradient(0deg, rgba(54, 91, 96, 1) 0%, rgba(75, 182, 215, 1) 23%, rgba(54, 84, 91, 1) 100%);
+}
 .wrapperCont {
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
 }
 
 .linkCont {
@@ -16,11 +17,28 @@
 }
 
 .map {
+    iframe {
+        border-radius: 30px;
+    }
     margin-left: 30px;
     @include wi_he(300px, 200px);
 }
 
 .contacts {
+    color: white;
+    h1 {
+        text-align: center;
+    }
+    p {
+        font-size: 20px;
+    }
+    address {
+        font-size: 20px;
+    }
+    h2 {
+        padding-top: 30px;
+        text-align: center;
+    }
     padding-top: 10px;
     margin-top: 30px;
 }

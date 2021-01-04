@@ -2,7 +2,7 @@ import React from 'react';
 import "../Products/products.css"
 import { useState } from 'react';
 import Total from './Total/Total'
-import Cup from '../../Image/product/cup.png'
+import cup from '../../Image/product/cup.png'
 
 
 const ProductsSite = (props) => {
@@ -20,7 +20,7 @@ const ProductsSite = (props) => {
 
     return (
         <div className='headWrap'>
-            <div className="countProd"><img src={Cup}></img><h1> :products</h1></div>
+            <div className="countProd"><img src={cup}></img><h1> :products</h1></div>
             <div className="wrap">
                 <div className="wrappers">
                     {getOneTier}
@@ -71,7 +71,6 @@ const ProductItem = (props) => {
                         <button id="one" onClick={addCount}>+</button>
                         <button id="two" onClick={decCount}>-</button>
                     </div>
-
                 </div>
             </div>
         </div>
