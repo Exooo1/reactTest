@@ -1,8 +1,10 @@
 .wrapperAbout {
   width: 100%;
   height: 46em;
-  background-color: wheat;
+  background-color: none;
   border-radius: 0px;
+  background-image: url("https://cdn.hipwallpaper.com/i/44/36/jAcbCT.jpg");
+  background-size: 1250px 650px;
 }
 
 .wrapperAb {
@@ -13,11 +15,11 @@
 }
 
 .aboutMe {
-  width: 700px;
-  height: 500px;
-  background-color: #eaeaea;
+  width: 500px;
+  height: 340px;
+  background-color: #4e8d05;
   border-radius: 80px;
-  margin-top: 30px;
+  margin-top: 15px;
   box-shadow: 0 0 13px rgba(0, 0, 0, 0.5);
 }
 
@@ -27,7 +29,7 @@
   box-shadow: 0 0 13px rgba(0, 0, 0, 0.5);
   text-align: center;
   height: 100px;
-  background-color: #226809;
+  background-color: #000000;
 }
 .backImg img {
   margin-top: 40px;
@@ -38,12 +40,15 @@
 }
 
 .backMe {
-  margin-top: 80px;
+  margin-top: 60px;
   text-align: center;
 }
 .backMe p {
+  font-size: 15px;
+  color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 .backMe h1 {
+  font-size: 34px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }

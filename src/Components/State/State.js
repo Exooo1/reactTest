@@ -1,4 +1,6 @@
 import reducerProducts from '../redux/products-reducer'
+import reducerContacts from '../redux/contacts-reducer'
+
 let store = {
     _state: {
         products: {
@@ -34,6 +36,7 @@ let store = {
     },
     dispatch(action) {
         this._state.products = reducerProducts(this._state.products, action)
+        this._state.showCont = reducerContacts(this._state.showCont,action)
         addRender(this._state)
     }
 }

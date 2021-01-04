@@ -1,3 +1,7 @@
+.headWrap{
+    background: rgb(72,89,61);
+    background: linear-gradient(0deg, rgba(72,89,61,1) 0%, rgba(198,255,209,1) 37%, rgba(62,78,49,1) 100%);
+}
 .wrappers {
     margin: 30px 20%;
     display: grid;
@@ -19,10 +23,13 @@
 }
 
 .wrapProd {
+    border: solid;
+    border-color: rgb(180, 180, 180);
+    background-color: white;
     transition: 0.6s;
     transform-style: preserve-3d;
-    width: 220px;
-    height: 290px;
+    width: 240px;
+    height: 300px;
     text-align: center;
     margin: 25px 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -38,17 +45,17 @@
 }
 
 .prods:hover {
-    transition: 1s;
+    transition: 1.5s;
     transform: scale(1.2);
 }
 
 .front p {
+    font-size: 17px;
     margin-top: 0px;
 }
 
 .but {
     transform: rotateY(180deg);
-    margin: 30px 0;
     display: flex;
     justify-content: center;
     align-items: center;

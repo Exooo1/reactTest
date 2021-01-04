@@ -2,7 +2,9 @@
 @import "../scss/variables.scss";
 
 .wrapperAbout {
-    @include block(100%, 46em, wheat);
+    @include block(100%, 46em, none);
+    background-image: url("https://cdn.hipwallpaper.com/i/44/36/jAcbCT.jpg");
+    background-size: 1250px 650px;
 }
 
 .wrapperAb {
@@ -11,8 +13,8 @@
 }
 
 .aboutMe {
-    @include block(700px, 500px, #eaeaea, 80px);
-    margin-top: 30px;
+    @include block(500px, 340px, #4e8d05, 80px);
+    margin-top: 15px;
     box-shadow: $boxShadow;
 }
 
@@ -22,7 +24,7 @@
     box-shadow: $boxShadow;
     text-align: center;
     height: 100px;
-    background-color: #226809;
+    background-color: #000000;
     img {
         margin-top: 40px;
         @include block(120px, 120px, $borderR: 70px);
@@ -30,12 +32,15 @@
 }
 
 .backMe {
-    margin-top: 80px;
+    margin-top: 60px;
     text-align: center;
     p {
+        font-size: 15px;
+        color: white;
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     }
     h1 {
+        font-size: 34px;
         font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     }
 }

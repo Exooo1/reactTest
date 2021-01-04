@@ -4,14 +4,12 @@ import './css/threeNews.css'
 
 const ThreeNewsBlock = () => {
     return (
-        <div>
-            <div className="newsBlockThree">
-                <div className="blockThree">
-                    <img src={getPrize}></img>
-                </div>
-                <div className="buttonBlockThree">
-                    <button>Participate</button>
-                </div>
+        <div className="newsBlockThree">
+            <div className="blockThree">
+                <img src={getPrize}></img>
+            </div>
+            <div className="buttonBlockThree">
+                <button>Participate</button>
             </div>
         </div>
     )

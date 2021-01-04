@@ -48,22 +48,20 @@ const TwoNewsBlock = () => {
     }
 
     return (
-        <div>
-            <div className="newsBlockTwo">
-                <p id="twoBlockText">Even more flavors...</p>
-                <div className="twoNews">
-                    <div className="oneButtonTwoNews">
-                        <img onClick={backTea} src={left}></img>
-                    </div>
-                    <div className="imgTwoNews">
-                        <img src={tea}></img>
-                    </div>
-                    <div className="twoButtonTwoNews">
-                        <img onClick={nextTea} src={right}></img>F
-                    </div>
+        <div className="newsBlockTwo">
+            <p id="twoBlockText">Even more flavors...</p>
+            <div className="twoNews">
+                <div className="oneButtonTwoNews">
+                    <img onClick={backTea} src={left}></img>
                 </div>
-                <p id="oneTwoBlockText">...Even more choice</p>
+                <div className="imgTwoNews">
+                    <img src={tea}></img>
+                </div>
+                <div className="twoButtonTwoNews">
+                    <img onClick={nextTea} src={right}></img>F
+                    </div>
             </div>
+            <p id="oneTwoBlockText">...Even more choice</p>
         </div>
     )
 }
