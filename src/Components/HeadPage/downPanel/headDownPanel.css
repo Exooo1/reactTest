@@ -1,0 +1,9 @@
+.headDownPanel {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    padding-top: 0.5px;
+    text-align: center;
+    color: white;
+    height: 80px;
+    background-color: black;
+}

@@ -1,18 +1,21 @@
-import React from 'react';
-import '../About/about.css';
-import Me from '../../Image/me.jpg';
-
+import '../About/css/about.css';
+import me from '../../Image/about/me.jpg';
 
 const About = () => {
 
     return (
-        <div className='wrapperAb'>
-            <div className="aboutMe">
-                <div className="back">
-                    <img src={Me}></img></div>
-                <div className='backAb'>
-                    <h1>Vlas Maskalenchik</h1>
-                    <p>Chris Pederick is a web developer originally from London, England, but now living in San Francisco, California. He is a Director of Engineering at Bleacher Report. In his spare time he writes the Web Developer browser extension and is also the creator of Read Ruler which allows you to view your Pocket articles listed by reading time and automatically add reading time tags to those articles. His pronouns are he/him.</p>
+        <div className="wrapperAbout">
+            <div className='wrapperAb'>
+                <div className="aboutMe">
+                    <div className="backImg">
+                        <img src={me} title="Hello"></img>
+                    </div>
+                    <div className='backMe'>
+                        <h1 className="twoSec">Vlas Maskalenchik</h1>
+                        <p className="fiveSec">Hello! My name is vlas, welcome to my site, this is site i make in hope
+                        that recruiters is from IT-sphere  will notice my endeavors.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

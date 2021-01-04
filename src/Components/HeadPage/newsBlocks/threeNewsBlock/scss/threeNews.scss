@@ -1,0 +1,28 @@
+@import "./mixin-three.scss";
+
+.newsBlockThree {
+    @include flex(100%, rgb(0, 0, 0));
+}
+.blockThree {
+    img {
+        width: 1908px;
+    }
+}
+
+.buttonBlockThree {
+    margin-right: 900px;
+    position: absolute;
+    button {
+        outline: none !important;
+        border-radius: 10px;
+        font-size: 30px;
+        border: gold;
+        background-color: gold;
+        width: 210px;
+        height: 70px;
+        &:hover {
+            border: solid;
+            border-color: #c3ff00;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@mixin flex($with, $back) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $back;
+    width: $with;
+}
+
+@mixin block($width, $height, $backColor: white, $borderR: 0px) {
+    width: $width;
+    height: $height;
+    background-color: $backColor;
+    border-radius: $borderR;
+    @content;
+}
