@@ -1,26 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../Products/products.css"
-import { useState } from 'react';
-import Total from './Total/Total'
 import cup from '../../Image/product/cup.png'
+import ProductItem from './itemProducts/ProductItem'
 
 
-const ProductsSite = (props) => {
-    debugger
 
-    let addProducts = () => {
-        props.dispatch({ type: "ADD-PRODUCTS" })
+const Products = (props) => {
+
+    let [total, setTotal] = useState(0)
+
+    let setT = (number) => {
+        setTotal(total += number)
     }
 
-    let getOneTier = props.productsOne.map(get => <ProductItem name={get.name} src={get.src} id={get.gramPrice} text={get.text} />);
+    const cancel = () => {
+        setTotal(total = 0)
+    }
 
-    let getTwoTier = props.productsTwo.map(get => <ProductItem name={get.name} src={get.src} id={get.gramPrice} text={get.text} />);
 
-    let getThreeTier = props.productsThree.map(get => <ProductItem name={get.name} src={get.src} id={get.gramPrice} text={get.text} />);
+    let getOneTier = props.productsOne.map(get => <ProductItem name={get.name} src={get.src} id={get.gramPrice} text={get.text} cost={get.cost} setT={setT} />);
+
+    let getTwoTier = props.productsTwo.map(get => <ProductItem name={get.name} src={get.src} id={get.gramPrice} text={get.text} cost={get.cost} />);
+
+    let getThreeTier = props.productsThree.map(get => <ProductItem name={get.name} src={get.src} id={get.gramPrice} text={get.text} cost={get.cost} />);
 
     return (
+
         <div className='headWrap'>
-            <div className="countProd"><img src={cup}></img><h1> :products</h1></div>
+            <div className="countProd"><img src={cup}></img><h1>{props.array}:products</h1></div>
             <div className="wrap">
                 <div className="wrappers">
                     {getOneTier}
@@ -28,53 +35,16 @@ const ProductsSite = (props) => {
                     {getThreeTier}
                 </div>
             </div>
-            <Total />
-            <button onClick={addProducts}>onClick</button>
-        </div>
-    )
-}
-
-const ProductItem = (props) => {
-
-    let addCount = () => {
-        if (count <= 400) {
-            setCount(count += 100)
-        }
-    }
-
-    let decCount = () => {
-        if ((count >= 100) && (count != 0)) {
-            setCount(count -= 100)
-
-        } else {
-            setCount(count = 100)
-        }
-    }
-
-    let [count, setCount] = useState(props.id);
-
-    return (
-        <div className="prods">
-            <div className="wrapProd">
-                <div className="front">
-                    <h1>{props.name}</h1>
-                    <img src={props.src}></img>
-                    <p>{props.text}</p>
-                </div>
-                <div className="but">
-                    <div className='back'>
-                        <h1>{props.name}</h1>
-                    </div>
-                    <div className="backImage"><img src={props.src}></img></div>
-                    <div className="count"><b >{count}g</b></div>
-                    <div className="twoBut">
-                        <button id="one" onClick={addCount}>+</button>
-                        <button id="two" onClick={decCount}>-</button>
-                    </div>
+            <div className="wrapperTotal">
+                <div className="total">Total:{total}</div>
+                <div className="wrapperBasket">
+                    <button onClick={cancel}>Cancel</button>
+                    <button>Basket</button>
                 </div>
             </div>
+            <button onClick={props.addProducts}>onClick</button>
         </div>
     )
 }
 
-export default ProductsSite;
+export default Products;

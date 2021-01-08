@@ -3,7 +3,6 @@ import '../HeadPage/headPage.css'
 import OneNewsBlock from './newsBlocks/oneNewsBlock/oneNewsBlock'
 import TwoNewsBlock from './newsBlocks/twoNewsBlock/twoNewsBlock'
 import ThreeNewsBlock from './newsBlocks/threeNewsBlock/theeNewsBlock'
-import getPrize from '../../Image/headPage/getPrize.jpg'
 import downButt from '../../Image/headPage/downButt.png'
 import HeadPanelDown from './downPanel/headDownPanel'
 import { Link } from "react-scroll"

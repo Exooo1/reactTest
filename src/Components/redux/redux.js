@@ -2,9 +2,9 @@ import { combineReducers, createStore } from 'redux';
 import reducerProducts from "./products-reducer"
 import reducerContacts from "./contacts-reducer"
 
-let reducer = combineReducers({
+const reducer = combineReducers({
     products: reducerProducts,
-    cont: reducerContacts,
+    contacts: reducerContacts,
 })
 
 let store = createStore(reducer);

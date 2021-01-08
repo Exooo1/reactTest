@@ -1,0 +1,25 @@
+.choose {
+    background-color: black;
+    text-align: center;
+}
+
+.choose img {
+    border-bottom: solid;
+    border-color: #1f221f;
+    margin-top: 150px;
+    width: 250px;
+    height: 220px;
+}
+@media all and (max-width: 460px){
+    .choose{
+        border-color: #1f221f;
+        width: 460px;
+    }
+    .choose img {
+        padding-right: 65px;
+        border-bottom: solid;
+        margin-top: 150px;
+        width: 120px;
+        height: 120px;
+    }
+}
